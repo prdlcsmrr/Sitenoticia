@@ -2796,3 +2796,11 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Blogs: bloco "Courtesy of" ===== */
+.news-item-cortesia {
+  color: #4A5568;
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
