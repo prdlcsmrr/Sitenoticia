@@ -2016,3 +2016,412 @@ button:focus-visible {
     flex-direction: column;
   }
 }
+
+/* ===== História do DOJ: Carrossel principal ===== */
+.historia-hero {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  background: var(--azul-profundo);
+}
+
+.historia-slide {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: flex-end;
+}
+
+.historia-slide-ativa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.historia-slide-sombra {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(11,37,69,0.45) 0%, rgba(11,37,69,0.05) 45%, rgba(11,37,69,0.05) 100%);
+  pointer-events: none;
+}
+
+.historia-slide-blueprint {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.historia-slide-marca {
+  position: absolute;
+  top: 36px;
+  right: 48px;
+  z-index: 2;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.15;
+  color: var(--dourado);
+  text-align: right;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  margin: 0;
+}
+
+.historia-slide-conteudo {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-bottom: 76px;
+}
+
+.historia-cartao {
+  background: rgba(247,248,250,0.96);
+  border-left: 4px solid var(--dourado);
+  max-width: 420px;
+  padding: 20px 24px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+.historia-cartao-badge {
+  color: var(--azul-aco);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.historia-cartao-titulo {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--azul-profundo);
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.historia-cartao-data {
+  display: inline-block;
+  background: #DCE8F7;
+  color: var(--azul-profundo);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  margin: 0 -24px -20px;
+  padding-left: 24px;
+  width: calc(100% - 0px);
+}
+
+.historia-cartao-simples {
+  border-left: none;
+  border-top: 4px solid var(--dourado);
+  max-width: 460px;
+}
+
+.historia-cartao-titulo-solto {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: var(--azul-profundo);
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.historia-cartao-video {
+  background: rgba(11,37,69,0.88);
+  border-left: 4px solid var(--dourado);
+  max-width: 380px;
+}
+
+.historia-cartao-badge-video {
+  color: var(--dourado);
+}
+
+.historia-cartao-titulo-clara {
+  color: var(--texto-claro);
+  font-family: 'Fraunces', serif;
+}
+
+.historia-seta-esq {
+  left: 16px;
+}
+
+.historia-seta-dir {
+  right: 16px;
+}
+
+.historia-paginas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+  z-index: 3;
+  display: flex;
+  gap: 6px;
+}
+
+.historia-pagina {
+  background: rgba(11,37,69,0.75);
+  color: var(--texto-claro);
+}
+
+.historia-pagina.pagina-ativa {
+  background: var(--dourado);
+  color: var(--azul-profundo);
+}
+
+.historia-cards {
+  background: #EEF2F8;
+  padding: 8px 0 56px;
+}
+
+.historia-cards-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.historia-imagem-retrato {
+  object-fit: contain;
+  background: var(--texto-claro);
+  padding: 10px;
+}
+
+@media (max-width: 720px) {
+  .historia-hero {
+    height: auto;
+    min-height: 480px;
+  }
+  .historia-cartao {
+    max-width: none;
+  }
+  .historia-slide-marca {
+    font-size: 1.3rem;
+    right: 20px;
+  }
+}
+
+/* ===== Office of Privacy and Civil Liberties ===== */
+.opcl-hero-imagem {
+  height: 360px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.opcl-mission {
+  background: #EEF2F8;
+  padding: 56px 0;
+}
+
+.opcl-mission-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.opcl-mission-texto p {
+  color: #4A5568;
+  margin-top: 16px;
+}
+
+.opcl-info-cartao {
+  background: var(--texto-claro);
+  box-shadow: 0 12px 28px rgba(11,37,69,0.1);
+  padding: 24px;
+}
+
+.opcl-info-cartao h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.opcl-info-linha {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--borda);
+  margin: 14px 0 18px;
+}
+
+.opcl-info-conteudo {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.opcl-info-texto h4 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--azul-profundo);
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+.opcl-info-texto h4:first-child {
+  margin-top: 0;
+}
+
+.opcl-info-link {
+  color: var(--azul-aco);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.opcl-info-texto p {
+  color: #4A5568;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.opcl-info-avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.opcl-dprc-painel {
+  background: var(--azul-profundo);
+  padding: 48px 0;
+}
+
+.opcl-dprc-cartao {
+  background: var(--texto-claro);
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 28px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.opcl-dprc-selo {
+  background: var(--azul-profundo);
+  color: var(--texto-claro);
+  padding: 24px;
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+}
+
+.opcl-dprc-selo p {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.opcl-dprc-estrelas {
+  position: absolute;
+  right: 18px;
+  top: 24px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--texto-claro);
+  font-size: 1.1rem;
+  letter-spacing: 0;
+}
+
+.opcl-dprc-texto h3 {
+  color: var(--azul-aco);
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.opcl-dprc-texto p {
+  color: #4A5568;
+  margin-bottom: 20px;
+}
+
+.opcl-legislacao {
+  background: var(--texto-claro);
+  padding: 8px 0 48px;
+}
+
+.opcl-legislacao-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.opcl-legislacao-cartao {
+  border: 1px solid var(--borda);
+  padding: 28px;
+  box-shadow: 0 8px 20px rgba(11,37,69,0.06);
+}
+
+.opcl-legislacao-cartao h3 {
+  color: var(--azul-aco);
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+.opcl-legislacao-cartao p {
+  color: #4A5568;
+  margin-bottom: 20px;
+}
+
+.opcl-action {
+  background: var(--texto-claro);
+  padding: 8px 0 56px;
+}
+
+.opcl-action-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 24px;
+}
+
+.opcl-action-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--texto);
+  padding-bottom: 20px;
+  border-bottom: 1px dashed var(--borda);
+}
+
+.opcl-action-icone {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: var(--azul-profundo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opcl-action-icone img {
+  width: 22px;
+  height: 22px;
+}
+
+@media (max-width: 720px) {
+  .opcl-mission-grid {
+    grid-template-columns: 1fr;
+  }
+  .opcl-dprc-cartao {
+    grid-template-columns: 1fr;
+  }
+  .opcl-legislacao-grid {
+    grid-template-columns: 1fr;
+  }
+  .opcl-action-grid {
+    grid-template-columns: 1fr;
+  }
+}

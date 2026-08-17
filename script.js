@@ -16,38 +16,43 @@ const slidesDoVideo = [
 
 let slideAtual = 0;
 
-function mostrarSlide(indice) {
-  slideAtual = indice;
-  const slide = slidesDoVideo[slideAtual];
+// Este carrossel (vídeo do topo) só existe na página inicial (index.html).
+// A checagem abaixo evita que a página quebre em outras páginas do site.
+if (document.getElementById("seta-esquerda")) {
 
-  document.getElementById("video-hero").src =
-    "https://www.youtube.com/embed/" + slide.video + "?rel=0";
-  document.getElementById("hero-titulo").textContent = slide.titulo;
-  document.getElementById("hero-data").textContent = slide.data;
+  function mostrarSlide(indice) {
+    slideAtual = indice;
+    const slide = slidesDoVideo[slideAtual];
+
+    document.getElementById("video-hero").src =
+      "https://www.youtube.com/embed/" + slide.video + "?rel=0";
+    document.getElementById("hero-titulo").textContent = slide.titulo;
+    document.getElementById("hero-data").textContent = slide.data;
+
+    document.querySelectorAll(".pagina").forEach(function (elemento, i) {
+      elemento.classList.toggle("pagina-ativa", i === slideAtual);
+    });
+  }
 
   document.querySelectorAll(".pagina").forEach(function (elemento, i) {
-    elemento.classList.toggle("pagina-ativa", i === slideAtual);
+    elemento.addEventListener("click", function () {
+      mostrarSlide(i);
+      reiniciarAutoAvanco();
+    });
   });
-}
 
-document.querySelectorAll(".pagina").forEach(function (elemento, i) {
-  elemento.addEventListener("click", function () {
-    mostrarSlide(i);
+  document.getElementById("seta-esquerda").addEventListener("click", function () {
+    const anterior = (slideAtual - 1 + slidesDoVideo.length) % slidesDoVideo.length;
+    mostrarSlide(anterior);
     reiniciarAutoAvanco();
   });
-});
 
-document.getElementById("seta-esquerda").addEventListener("click", function () {
-  const anterior = (slideAtual - 1 + slidesDoVideo.length) % slidesDoVideo.length;
-  mostrarSlide(anterior);
-  reiniciarAutoAvanco();
-});
-
-document.getElementById("seta-direita").addEventListener("click", function () {
-  const proximo = (slideAtual + 1) % slidesDoVideo.length;
-  mostrarSlide(proximo);
-  reiniciarAutoAvanco();
-});
+  document.getElementById("seta-direita").addEventListener("click", function () {
+    const proximo = (slideAtual + 1) % slidesDoVideo.length;
+    mostrarSlide(proximo);
+    reiniciarAutoAvanco();
+  });
+}
 
 // ===== Avanço automático (passa de 1 em 1 sozinho) =====
 let temporizador;
@@ -61,8 +66,10 @@ function reiniciarAutoAvanco() {
 }
 
 // Carrega o primeiro vídeo assim que a página abre
-mostrarSlide(0);
-reiniciarAutoAvanco();
+if (document.getElementById("seta-esquerda")) {
+  mostrarSlide(0);
+  reiniciarAutoAvanco();
+}
 
 document.getElementById("botao-aviso").addEventListener("click", function () {
   const painel = document.getElementById("painel-aviso");
@@ -200,4 +207,42 @@ if (document.getElementById("about-hero-paginas")) {
   document.getElementById("about-seta-direita").addEventListener("click", function () {
     mostrarSlideAbout((slideAboutAtual + 1) % slidesAbout.length);
   });
+}
+
+// ===== Carrossel da página History of the Department of Justice =====
+if (document.getElementById("historia-hero")) {
+  const slidesHistoria = document.querySelectorAll(".historia-slide");
+  const paginasHistoria = document.querySelectorAll("#historia-paginas .historia-pagina");
+  let slideHistoriaAtual = 0;
+
+  function mostrarSlideHistoria(indice) {
+    slideHistoriaAtual = indice;
+    slidesHistoria.forEach(function (el, i) {
+      el.classList.toggle("historia-slide-ativa", i === slideHistoriaAtual);
+    });
+    paginasHistoria.forEach(function (el, i) {
+      el.classList.toggle("pagina-ativa", i === slideHistoriaAtual);
+    });
+  }
+
+  paginasHistoria.forEach(function (el, i) {
+    el.addEventListener("click", function () {
+      mostrarSlideHistoria(i);
+    });
+  });
+
+  const setaEsqHistoria = document.getElementById("historia-seta-esquerda");
+  const setaDirHistoria = document.getElementById("historia-seta-direita");
+
+  if (setaEsqHistoria) {
+    setaEsqHistoria.addEventListener("click", function () {
+      mostrarSlideHistoria((slideHistoriaAtual - 1 + slidesHistoria.length) % slidesHistoria.length);
+    });
+  }
+
+  if (setaDirHistoria) {
+    setaDirHistoria.addEventListener("click", function () {
+      mostrarSlideHistoria((slideHistoriaAtual + 1) % slidesHistoria.length);
+    });
+  }
 }
