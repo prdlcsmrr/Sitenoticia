@@ -146,25 +146,30 @@ function mostrarConjuntoWanted(indice) {
   });
 }
 
-document.querySelectorAll("#wanted-pontos span").forEach(function (ponto, i) {
-  ponto.addEventListener("click", function () {
-    mostrarConjuntoWanted(i);
-    reiniciarAutoAvancoWanted();
+// Este carrossel (Wanted Fugitives) só existe na página inicial (index.html).
+// A checagem abaixo evita que a página quebre em outras páginas do site.
+if (document.getElementById("wanted-pontos")) {
+
+  document.querySelectorAll("#wanted-pontos span").forEach(function (ponto, i) {
+    ponto.addEventListener("click", function () {
+      mostrarConjuntoWanted(i);
+      reiniciarAutoAvancoWanted();
+    });
   });
-});
 
-let temporizadorWanted;
+  var temporizadorWanted;
 
-function reiniciarAutoAvancoWanted() {
-  clearInterval(temporizadorWanted);
-  temporizadorWanted = setInterval(function () {
-    const proximo = (conjuntoAtual + 1) % conjuntosWanted.length;
-    mostrarConjuntoWanted(proximo);
-  }, 3500); // troca a cada 3,5 segundos
+  function reiniciarAutoAvancoWanted() {
+    clearInterval(temporizadorWanted);
+    temporizadorWanted = setInterval(function () {
+      const proximo = (conjuntoAtual + 1) % conjuntosWanted.length;
+      mostrarConjuntoWanted(proximo);
+    }, 3500); // troca a cada 3,5 segundos
+  }
+
+  mostrarConjuntoWanted(0);
+  reiniciarAutoAvancoWanted();
 }
-
-mostrarConjuntoWanted(0);
-reiniciarAutoAvancoWanted();
 
 // ===== Carrossel da página About DOJ (retratos) =====
 if (document.getElementById("about-hero-paginas")) {

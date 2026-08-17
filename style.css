@@ -2425,3 +2425,21 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Página Our Work ===== */
+.how-manage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 40px;
+  margin-top: 24px;
+}
+
+.how-manage-grid .lista-estrela a {
+  color: var(--texto-claro);
+}
+
+@media (max-width: 720px) {
+  .how-manage-grid {
+    grid-template-columns: 1fr;
+  }
+}
