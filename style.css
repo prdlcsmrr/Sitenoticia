@@ -2738,3 +2738,10 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Press Releases: resumo do item ===== */
+.news-item-resumo {
+  color: #4A5568;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
