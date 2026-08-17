@@ -1954,3 +1954,65 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Página: Agencies (Org Chart) ===== */
+.agencies-abas {
+  padding: 0 0 40px;
+}
+
+.agencies-abas-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.agencies-aba {
+  display: inline-block;
+  padding: 14px 22px;
+  border: 1.5px solid var(--azul-medio);
+  color: var(--azul-profundo);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.agencies-aba:hover {
+  background: var(--azul-medio);
+  color: var(--texto-claro);
+}
+
+.agencies-aba-ativa {
+  background: var(--azul-medio);
+  color: var(--texto-claro);
+  border-color: var(--azul-medio);
+}
+
+.agencies-organograma {
+  padding: 0 0 64px;
+}
+
+.agencies-organograma-imagem {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--borda);
+  margin-bottom: 28px;
+}
+
+.agencies-links-extra {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.agencies-links-extra a {
+  color: var(--azul-aco);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .agencies-abas-grid {
+    flex-direction: column;
+  }
+}
