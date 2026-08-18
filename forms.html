@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guidance Documents</title>
+<title>Forms</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Merriweather:wght@700;900&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -139,163 +139,221 @@
   <div class="container">
     <a href="index.html">Justice.gov</a>
     <span class="breadcrumb-separador" aria-hidden="true">&#8250;</span>
-    <span>Guidance Documents</span>
+    <span>Forms</span>
   </div>
 </div>
 
-<section class="news-pagina">
-  <div class="container news-grid">
+<section class="pagina-titulo">
+  <div class="container">
+    <h1>Forms</h1>
+    <span class="titulo-linha" aria-hidden="true"></span>
+  </div>
+</section>
 
-    <aside class="news-sidebar">
-      <div class="news-filtros" style="margin-top:0;">
-        <h3>Filters</h3>
-        <span class="titulo-linha" aria-hidden="true"></span>
-        <button type="button" class="news-filtro-item">Filter by Component <span>+</span></button>
-        <button type="button" class="news-filtro-item">Filter by Topic <span>+</span></button>
-        <button type="button" class="news-filtro-item">Filter by Date Issued <span>+</span></button>
+<section class="forms-secao">
+  <div class="container">
+    <p class="forms-aviso"><strong>Please note:</strong> This list does not include <a href="#contato">forms for the Federal Bureau of Prisons (BOP)</a> or <a href="#contato">forms for the Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF)</a>. Forms for these Bureaus may be found on their websites.</p>
+
+    <div class="forms-filtros">
+      <div class="forms-filtros-linha">
+        <label>Title
+          <input type="text" name="titulo-forms">
+        </label>
+        <label>Agency
+          <select>
+            <option>- Any -</option>
+            <option>Office of Justice Programs (OJP)</option>
+            <option>Drug Enforcement Administration (DEA)</option>
+            <option>Executive Office for Immigration Review</option>
+          </select>
+        </label>
+        <label class="forms-mostrar-label">Show per page
+          <select>
+            <option>10</option>
+            <option selected>25</option>
+            <option>50</option>
+          </select>
+        </label>
       </div>
-    </aside>
-
-    <div class="news-conteudo">
-      <h1>Guidance Documents</h1>
-      <span class="titulo-linha" aria-hidden="true"></span>
-      <button type="button" class="botao-share">
-        Share
-        <span class="botao-share-seta" aria-hidden="true">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
-        </span>
-      </button>
-
-      <div class="news-busca">
-        <div class="news-busca-linha" style="grid-template-columns:1fr;">
-          <label>Keyword Search
-            <input type="text" name="palavra-chave">
-          </label>
-        </div>
-        <div class="news-busca-botoes">
-          <button type="button" class="botao news-botao-aplicar">Apply Search</button>
-          <button type="button" class="news-botao-limpar">Reset Search</button>
-        </div>
+      <div class="news-busca-botoes">
+        <button type="button" class="forms-botao-aplicar">Apply Filters</button>
+        <button type="button" class="forms-botao-limpar">Reset Filters</button>
       </div>
-
-      <p class="news-total"><strong>1272 Results</strong></p>
-
-      <div class="news-lista">
-        
-    <div class="news-item">
-      <p class="news-item-tipo">GUIDANCE DOCUMENTS</p>
-      <h3><a href="#contato">Email Concerning Emergency Rental Assistance Programs</a></h3>
-      <span class="titulo-linha news-item-linha" aria-hidden="true"></span>
-      <p class="news-item-resumo">Email to credit counseling agencies and debtor education providers concerning Emergency Rental Assistance Programs</p>
-      <p class="guidance-meta"><strong>ID:</strong> UST-2065191</p>
-      <p class="guidance-meta"><strong>Component</strong> U.S. Trustee Program</p>
-      <p class="news-item-data" style="margin-top:10px;"><strong>Date Issued:</strong> June 3, 2024</p>
     </div>
 
-    <div class="news-item">
-      <p class="news-item-tipo">GUIDANCE DOCUMENTS</p>
-      <h3><a href="#contato">Do I need a license to buy or sell firearms? (ATF P 5310.2)</a></h3>
-      <span class="titulo-linha news-item-linha" aria-hidden="true"></span>
-      <p class="news-item-resumo">ATF guidance to help the public understand when those who buy and sell firearms must have a federal firearms license.</p>
-      <p class="guidance-meta"><strong>ID:</strong> DOJ-1314341</p>
-      <p class="guidance-meta"><strong>Component</strong> Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF)</p>
-      <p class="news-item-data" style="margin-top:10px;"><strong>Date Issued:</strong> May 28, 2024</p>
+    <p class="news-total" style="margin-top:24px;"><strong>166 Results</strong></p>
+
+    <div class="forms-tabela-wrap">
+      <table class="forms-tabela">
+        <thead>
+          <tr>
+            <th>Number <span aria-hidden="true">&#9650;</span></th>
+            <th>Form Title <span aria-hidden="true">&#9650;</span></th>
+            <th>Agency <span aria-hidden="true">&#9650;</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        <tr class="forms-linha-par">
+          <td>OJP 7120/1</td>
+          <td><a href="#contato">Accounting System and Financial Capability Questionnaire</a></td>
+          <td>Office of Justice Programs (OJP)</td>
+        </tr>
+
+        <tr>
+          <td>SF 3881</td>
+          <td><a href="#contato">ACH Vendor/Miscellaneous Payment Enrollment Form</a></td>
+          <td>Community Oriented Policing Services (COPS)</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td>NSD 3</td>
+          <td><a href="#contato">Amendment to Registration Statement Pursuant to the Foreign Agents Registration Act of 1938</a></td>
+          <td>National Security Division (NSD)</td>
+        </tr>
+
+        <tr>
+          <td>FD 258</td>
+          <td><a href="#contato">Applicant Fingerprint Form</a></td>
+          <td>Federal Bureau of Investigation (FBI)</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td></td>
+          <td><a href="#contato">Application for Approval as a Nonprofit Budget and Credit Counseling Agency &#8599;</a></td>
+          <td>U.S. Trustee Program</td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><a href="#contato">Application for Approval as a Provider of a Personal Financial Management Instructional Course &#8599;</a></td>
+          <td>U.S. Trustee Program</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td>I-598</td>
+          <td><a href="#contato">Application for Asylum and For Withholding of Removal &#8599;</a></td>
+          <td>Executive Office for Immigration Review</td>
+        </tr>
+
+        <tr>
+          <td>EOIR 42B</td>
+          <td><a href="#contato">Application for Cancellation of Removal and Adjustment of Status for Certain Nonpermanent Residents</a></td>
+          <td>Executive Office for Immigration Review</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td>EOIR 42A</td>
+          <td><a href="#contato">Application for Cancellation of Removal for Certain Permanent Residents</a></td>
+          <td>Executive Office for Immigration Review</td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><a href="#contato">Application for Certificate of Pardon for Simple Possession of Marijuana</a></td>
+          <td>Office of the Pardon Attorney</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td></td>
+          <td><a href="#contato">Application for Certificate of Pardon for Vietnam-era Selective Service Act Violations (August 4, 1964 to March 28, 1973)</a></td>
+          <td>Office of the Pardon Attorney</td>
+        </tr>
+
+        <tr>
+          <td>SF 424</td>
+          <td><a href="#contato">Application for Federal Assistance</a></td>
+          <td>Community Oriented Policing Services (COPS)</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td>SF 424</td>
+          <td><a href="#contato">Application for Federal Assistance (for OJP) &#8599;</a><br><a href="#contato" class="forms-link-extra">Alternate version</a></td>
+          <td>Office of Justice Programs (OJP)</td>
+        </tr>
+
+        <tr>
+          <td>USM-3C</td>
+          <td><a href="#contato">Application for Group Special Deputation</a></td>
+          <td>U.S. Marshals Service</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td>DEA 488</td>
+          <td><a href="#contato">Application for Import Quota for Ephedrine, Pseudoephedrine, Phenylpropanolamine</a><br><a href="#contato" class="forms-link-extra">Instructions</a></td>
+          <td>Drug Enforcement Administration (DEA)</td>
+        </tr>
+
+        <tr>
+          <td>DEA 189</td>
+          <td><a href="#contato">Application for Individual Manufacturing Quota</a><br><a href="#contato" class="forms-link-extra">Alternate version</a><br><a href="#contato" class="forms-link-extra">Instructions</a></td>
+          <td>Drug Enforcement Administration (DEA)</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td>DEA 225</td>
+          <td><a href="#contato">Application for New Registration Under Controlled Substance Act</a><br><a href="#contato" class="forms-link-extra">Alternate version</a><br><a href="#contato" class="forms-link-extra">Instructions</a></td>
+          <td>Drug Enforcement Administration (DEA)</td>
+        </tr>
+
+        <tr>
+          <td>DEA 224</td>
+          <td><a href="#contato">Application for New Registration Under Controlled Substance Act of 1970 Retail Pharmacy</a><br><a href="#contato" class="forms-link-extra">Instructions</a></td>
+          <td>Drug Enforcement Administration (DEA)</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td>DEA 363</td>
+          <td><a href="#contato">Application for New Registration under Narcotic Addict Treatment Act of 1974</a><br><a href="#contato" class="forms-link-extra">Instructions</a></td>
+          <td>Drug Enforcement Administration (DEA)</td>
+        </tr>
+
+        <tr>
+          <td>DEA 510</td>
+          <td><a href="#contato">Application for New Registration under the Controlled Substance Act</a><br><a href="#contato" class="forms-link-extra">Instructions</a></td>
+          <td>Drug Enforcement Administration (DEA)</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td>DEA 161</td>
+          <td><a href="#contato">Application for Permit to Export Controlled Substances Pursuant to Section 1003(a), (b), (c) &amp; (d), Title III, PL 91-513</a><br><a href="#contato" class="forms-link-extra">Alternate version</a><br><a href="#contato" class="forms-link-extra">Instructions</a></td>
+          <td>Drug Enforcement Administration (DEA)</td>
+        </tr>
+
+        <tr>
+          <td>DEA 357</td>
+          <td><a href="#contato">Application for Permit to Import Controlled Substances for Domestic and/or Scientific Purposes Pursuant to Section 1002, Title III, P.L. 91-513</a><br><a href="#contato" class="forms-link-extra">Alternate version</a><br><a href="#contato" class="forms-link-extra">Instructions</a></td>
+          <td>Drug Enforcement Administration (DEA)</td>
+        </tr>
+
+        <tr class="forms-linha-par">
+          <td>DEA 250</td>
+          <td><a href="#contato">Application for Procurement Quota</a><br><a href="#contato" class="forms-link-extra">Alternate version</a><br><a href="#contato" class="forms-link-extra">Instructions</a></td>
+          <td>Drug Enforcement Administration (DEA)</td>
+        </tr>
+
+        <tr>
+          <td>DEA 225a</td>
+          <td><a href="#contato">Application for Renewal of Registration Under Controlled Substance Act (online only)</a></td>
+          <td>Drug Enforcement Administration (DEA)</td>
+        </tr>
+
+        </tbody>
+      </table>
     </div>
 
-    <div class="news-item">
-      <p class="news-item-tipo">GUIDANCE DOCUMENTS</p>
-      <h3><a href="#contato">Email Concerning Length of Typical Credit Counseling Sessions</a></h3>
-      <span class="titulo-linha news-item-linha" aria-hidden="true"></span>
-      <p class="news-item-resumo">Email to credit counseling agencies concerning the length of typical credit counseling sessions.</p>
-      <p class="guidance-meta"><strong>ID:</strong> UST-2049096</p>
-      <p class="guidance-meta"><strong>Component</strong> U.S. Trustee Program</p>
-      <p class="news-item-data" style="margin-top:10px;"><strong>Date Issued:</strong> May 1, 2024</p>
-    </div>
+    <nav class="news-paginacao" aria-label="Paginação de formulários" style="margin-top:28px;">
+      <a href="#contato" class="pagina-ativa">1</a>
+      <a href="#contato">2</a>
+      <a href="#contato">3</a>
+      <a href="#contato">4</a>
+      <a href="#contato">5</a>
+      <span>&hellip;</span>
+      <a href="#contato">Next &rsaquo;</a>
+      <a href="#contato">Last &rsaquo;</a>
+    </nav>
 
-    <div class="news-item">
-      <p class="news-item-tipo">GUIDANCE DOCUMENTS</p>
-      <h3><a href="#contato">Notification for Previously Exempted Special Explosives Devices</a></h3>
-      <span class="titulo-linha news-item-linha" aria-hidden="true"></span>
-      <p class="news-item-resumo">The Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF) has rescinded the exemptions for certain consumer-style grenades (e.g., flashbang grenades, smoke grenades) as they have been determined by ATF to pose a risk to public safety. The purpose of this letter is to provide guidance on the requirements for these explosive devices that ATF previously exempted as special explosive devices (SEDs) pursuant to the regulation at <a href="#contato">27 CFR &sect; 555.32</a>.</p>
-      <p class="guidance-meta"><strong>ID:</strong> DOJ-2044561</p>
-      <p class="guidance-meta"><strong>Component</strong> Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF)</p>
-      <p class="news-item-data" style="margin-top:10px;"><strong>Date Issued:</strong> November 2, 2023</p>
-    </div>
-
-    <div class="news-item">
-      <p class="news-item-tipo">GUIDANCE DOCUMENTS</p>
-      <h3><a href="#contato">Questions and Answers on the Application of the ADA&rsquo;s Integration Mandate and Olmstead v. L.C. to Employment and Day Services for People with Disabilities</a></h3>
-      <span class="titulo-linha news-item-linha" aria-hidden="true"></span>
-      <p class="news-item-resumo">This document discusses and explains the requirements of the ADA&rsquo;s integration mandate and the Supreme Court&rsquo;s decision in Olmstead v. L.C. ex rel. Zimring, 527 U.S. 581 (1999), as applied to segregated employment settings and facility-based day programs.</p>
-      <p class="guidance-meta"><strong>ID:</strong> CRT-1814721</p>
-      <p class="guidance-meta"><strong>Components</strong> Civil Rights Division, &nbsp;&nbsp;|&nbsp;&nbsp; Civil Rights - Disability Rights Section</p>
-      <p class="news-item-data" style="margin-top:10px;"><strong>Date Issued:</strong> October 31, 2023</p>
-    </div>
-
-    <div class="news-item">
-      <p class="news-item-tipo">GUIDANCE DOCUMENTS</p>
-      <h3><a href="#contato">ATF Ruling 2023-1: Use of Electronic Explosives Records</a></h3>
-      <span class="titulo-linha news-item-linha" aria-hidden="true"></span>
-      <p class="news-item-resumo">The Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF) authorizes an alternate method or procedure to the explosives recordkeeping requirements contained in Title 27, Code of Federal Regulations (CFR), Part 555, Subpart G. Specifically, ATF authorizes federal explosives licensees and permittees (FEL/Ps) to maintain their records electronically instead of in paper format, provided the conditions set forth in this ruling are met. This ruling supersedes ATF Ruling 2007-1.</p>
-      <p class="guidance-meta"><strong>ID:</strong> DOJ-2044556</p>
-      <p class="guidance-meta"><strong>Component</strong> Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF)</p>
-      <p class="news-item-data" style="margin-top:10px;"><strong>Date Issued:</strong> October 18, 2023</p>
-    </div>
-
-    <div class="news-item">
-      <p class="news-item-tipo">GUIDANCE DOCUMENTS</p>
-      <h3><a href="#contato">DEA-Practitioner Training or Continuing Education Requirement for Registration (EO-DEA182R1)</a></h3>
-      <span class="titulo-linha news-item-linha" aria-hidden="true"></span>
-      <p class="news-item-resumo">This is a revision of a previously approved and posted Q&amp;A (EO-DEA182), that was not considered guidance. This Q&amp;A provides information regarding the training requirement included in CAA of 2023. All practitioners, who are not solely a veterinarian, must attest to satisfying the training, credentialing, or educational requirements identified in the CAA in order to obtain a new or renewal DEA registration.</p>
-      <p class="guidance-meta"><strong>ID:</strong> DEA-DC-076</p>
-      <p class="guidance-meta"><strong>Component</strong> Diversion Control Program (DEA)</p>
-      <p class="news-item-data" style="margin-top:10px;"><strong>Date Issued:</strong> September 25, 2023</p>
-    </div>
-
-    <div class="news-item">
-      <p class="news-item-tipo">GUIDANCE DOCUMENTS</p>
-      <h3><a href="#contato">Required Training with Respect to Opioid Use Disorder (OUD) for DEA-Registered Practitioners (EO-DEA268)</a></h3>
-      <span class="titulo-linha news-item-linha" aria-hidden="true"></span>
-      <p class="news-item-resumo">This guidance document provides information regarding a Drug Enforcement Administration (DEA)-registered practitioner&rsquo;s attestation of the training requirement in the recently enacted Consolidated Appropriations Act of 2023 (CAA). While specifically targeted to the treatment of or screening for OUD, this training is required for all qualified practitioners applying for or renewing a registration to dispense controlled substances in schedules II-V.</p>
-      <p class="guidance-meta"><strong>ID:</strong> DEA-DC-075</p>
-      <p class="guidance-meta"><strong>Component</strong> Diversion Control Program (DEA)</p>
-      <p class="news-item-data" style="margin-top:10px;"><strong>Date Issued:</strong> August 31, 2023</p>
-    </div>
-
-    <div class="news-item">
-      <p class="news-item-tipo">GUIDANCE DOCUMENTS</p>
-      <h3><a href="#contato">Reporting Regulated Transactions Involving Listed Chemicals (EO-DEA280)</a></h3>
-      <span class="titulo-linha news-item-linha" aria-hidden="true"></span>
-      <p class="news-item-resumo">This guidance document provides clarification regarding the regulatory requirement for persons engaging in regulated transactions in listed chemicals to report transactions involving an extraordinary quantity, an uncommon method of payment or delivery, or other circumstances indicating a potential use of listed chemicals in violation of the law. This guidance is being sent via email to all Drug Enforcement Administration (DEA) listed chemical registrants and regulated persons.</p>
-      <p class="guidance-meta"><strong>ID:</strong> DEA-DC-074</p>
-      <p class="guidance-meta"><strong>Component</strong> Diversion Control Program (DEA)</p>
-      <p class="news-item-data" style="margin-top:10px;"><strong>Date Issued:</strong> August 30, 2023</p>
-    </div>
-
-    <div class="news-item">
-      <p class="news-item-tipo">GUIDANCE DOCUMENTS</p>
-      <h3><a href="#contato">Open Letter to All North Carolina FFLs - Brady Handgun Violence Protection Act (Brady Act)</a></h3>
-      <span class="titulo-linha news-item-linha" aria-hidden="true"></span>
-      <p class="news-item-resumo">The purpose of this Open Letter is to notify you of an important change to the procedure you may follow to comply with the Brady Handgun Violence Protection Act (Brady Act), codified at 18 U.S.C. &sect; 922(t), when transferring a firearm to an unlicensed person. Specifically, the North Carolina pistol purchase permit may no longer be used as an alternative to the National Instant Criminal Background Check System (NICS) check requirement.</p>
-      <p class="guidance-meta"><strong>ID:</strong> DOJ-2043551</p>
-      <p class="guidance-meta"><strong>Component</strong> Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF)</p>
-      <p class="news-item-data" style="margin-top:10px;"><strong>Date Issued:</strong> August 15, 2023</p>
-    </div>
-
-      </div>
-
-      <nav class="news-paginacao" aria-label="Paginação de guidance documents">
-        <a href="#contato" class="pagina-ativa">1</a>
-        <a href="#contato">2</a>
-        <a href="#contato">3</a>
-        <a href="#contato">4</a>
-        <a href="#contato">5</a>
-        <span>&hellip;</span>
-        <a href="#contato">Next &rsaquo;</a>
-        <a href="#contato">Last &rsaquo;</a>
-      </nav>
-    </div>
-
+    <p class="forms-aviso" style="margin-top:24px;">Forms for agencies outside the Department of Justice can be found at <a href="#contato">USAGov Forms &#8599;</a>.</p>
   </div>
 </section>
 

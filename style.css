@@ -2826,3 +2826,115 @@ button:focus-visible {
 .guidance-meta strong {
   color: var(--texto);
 }
+
+/* ===== Página Forms ===== */
+.forms-secao {
+  padding: 32px 0 64px;
+  background: var(--texto-claro);
+}
+
+.forms-aviso {
+  color: #4A5568;
+  max-width: 900px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.forms-filtros {
+  background: #EEF2F8;
+  border-left: 4px solid var(--azul-profundo);
+  padding: 24px;
+}
+
+.forms-filtros-linha {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  gap: 20px;
+}
+
+.forms-filtros-linha label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--texto);
+  gap: 6px;
+}
+
+.forms-filtros-linha input,
+.forms-filtros-linha select {
+  border: 1px solid var(--borda);
+  padding: 10px 12px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.95rem;
+  background: var(--texto-claro);
+}
+
+.forms-mostrar-label select {
+  max-width: 100px;
+}
+
+.forms-botao-aplicar {
+  background: var(--azul-profundo);
+  color: var(--texto-claro);
+  border: none;
+  padding: 12px 22px;
+  font-weight: 700;
+  font-family: 'Source Sans 3', sans-serif;
+  cursor: pointer;
+}
+
+.forms-botao-limpar {
+  background: var(--azul-aco);
+  color: var(--texto-claro);
+  border: none;
+  padding: 12px 22px;
+  font-weight: 700;
+  font-family: 'Source Sans 3', sans-serif;
+  cursor: pointer;
+}
+
+.forms-tabela-wrap {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+.forms-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.forms-tabela thead th {
+  background: var(--azul-profundo);
+  color: var(--texto-claro);
+  text-align: left;
+  padding: 14px 16px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.forms-tabela tbody td {
+  padding: 14px 16px;
+  vertical-align: top;
+  border-bottom: 1px solid var(--borda);
+  color: var(--texto);
+}
+
+.forms-tabela tbody tr.forms-linha-par {
+  background: #F7F8FA;
+}
+
+.forms-tabela tbody a {
+  color: var(--azul-aco);
+}
+
+.forms-link-extra {
+  font-size: 0.88rem;
+}
+
+@media (max-width: 720px) {
+  .forms-filtros-linha {
+    grid-template-columns: 1fr;
+  }
+}
