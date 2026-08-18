@@ -2938,3 +2938,32 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Página Publications ===== */
+.publicacoes-secao {
+  padding: 24px 0 64px;
+  background: var(--texto-claro);
+}
+
+.publicacoes-intro {
+  color: var(--texto);
+  max-width: 900px;
+  margin-bottom: 24px;
+}
+
+.publicacoes-lista {
+  display: flex;
+  flex-direction: column;
+}
+
+.publicacoes-link {
+  color: var(--azul-aco);
+  text-decoration: underline;
+  padding: 6px 0;
+}
+
+.publicacoes-atualizado {
+  color: #4A5568;
+  font-style: italic;
+  margin-top: 20px;
+}
