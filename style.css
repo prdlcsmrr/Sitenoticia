@@ -3458,3 +3458,9 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Careers: títulos de seção grandes (Benefits) ===== */
+.carreira-conteudo-h2 {
+  font-size: 1.55rem;
+  margin: 40px 0 8px;
+}
