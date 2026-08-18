@@ -258,3 +258,38 @@ document.querySelectorAll(".business-acordeao-item").forEach(function (botao) {
     botao.classList.toggle("business-acordeao-aberto");
   });
 });
+
+// ===== Carrossel da página Legal Careers =====
+if (document.getElementById("legal-carrossel")) {
+  const slidesLegal = [
+    "Legal Careers at Justice",
+    "Find Opportunities for Law Students",
+    "The Attorney General's Honors Program",
+    "Experienced Attorneys",
+    "Explore the Benefits of Working at Justice"
+  ];
+
+  let slideLegalAtual = 0;
+
+  function mostrarSlideLegal(indice) {
+    slideLegalAtual = indice;
+    document.getElementById("legal-carrossel-titulo").textContent = slidesLegal[slideLegalAtual];
+    document.querySelectorAll("#legal-carrossel-paginas .legal-pagina").forEach(function (el, i) {
+      el.classList.toggle("pagina-ativa", i === slideLegalAtual);
+    });
+  }
+
+  document.querySelectorAll("#legal-carrossel-paginas .legal-pagina").forEach(function (el, i) {
+    el.addEventListener("click", function () {
+      mostrarSlideLegal(i);
+    });
+  });
+
+  document.getElementById("legal-seta-esquerda").addEventListener("click", function () {
+    mostrarSlideLegal((slideLegalAtual - 1 + slidesLegal.length) % slidesLegal.length);
+  });
+
+  document.getElementById("legal-seta-direita").addEventListener("click", function () {
+    mostrarSlideLegal((slideLegalAtual + 1) % slidesLegal.length);
+  });
+}

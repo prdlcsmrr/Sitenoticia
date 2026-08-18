@@ -3582,3 +3582,209 @@ button:focus-visible {
   color: var(--azul-profundo);
   padding-left: 12px;
 }
+
+/* ===== Legal Careers ===== */
+.legal-aviso {
+  color: #4A5568;
+  margin-bottom: 24px;
+}
+
+.legal-carrossel {
+  background: linear-gradient(135deg, #0B2545 0%, #13315C 60%, #2C4C7C 100%);
+  padding: 32px;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.legal-carrossel-seta {
+  background: none;
+  border: none;
+  color: var(--texto-claro);
+  cursor: pointer;
+  padding: 8px;
+  opacity: 0.8;
+}
+
+.legal-carrossel-seta:hover {
+  opacity: 1;
+}
+
+.legal-carrossel-texto {
+  color: var(--texto-claro);
+}
+
+.legal-carrossel-titulo {
+  font-family: 'Fraunces', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.legal-carrossel-linha {
+  display: block;
+  margin: 10px 0 18px;
+  background: var(--dourado);
+}
+
+.legal-carrossel-paginas {
+  display: flex;
+  gap: 8px;
+}
+
+.legal-pagina {
+  width: 30px;
+  height: 30px;
+  background: rgba(255,255,255,0.12);
+  border: none;
+  color: var(--texto-claro);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.legal-pagina.pagina-ativa {
+  background: var(--dourado);
+  color: var(--azul-profundo);
+}
+
+.legal-carrossel-foto {
+  width: 130px;
+  height: 130px;
+  background: #E9ECF2;
+  border: 2px solid var(--dourado);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.legal-explorar-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 32px;
+  background: #F7F8FA;
+  padding: 32px;
+  margin-bottom: 0;
+}
+
+.legal-explorar-texto p {
+  color: #4A5568;
+  margin-bottom: 20px;
+}
+
+.legal-info-cartao {
+  background: var(--texto-claro);
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(11,37,69,0.08);
+}
+
+.legal-info-cartao h3 {
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.legal-info-rotulo {
+  font-weight: 700;
+  color: var(--texto);
+  margin-top: 14px;
+  margin-bottom: 2px;
+}
+
+.legal-info-cartao p {
+  margin-bottom: 4px;
+}
+
+.legal-oportunidades-painel {
+  background: var(--azul-profundo);
+  color: var(--texto-claro);
+  padding: 40px;
+  margin-top: 8px;
+}
+
+.legal-oportunidades-painel h2 {
+  color: var(--texto-claro);
+  text-align: center;
+}
+
+.legal-oportunidades-painel .titulo-linha {
+  margin: 10px auto 28px;
+}
+
+.legal-oportunidades-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.legal-oportunidade-cartao {
+  background: var(--texto-claro);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.legal-oportunidade-cartao h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.legal-oportunidade-cartao p {
+  color: #4A5568;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.legal-oportunidade-cartao .botao {
+  align-self: flex-start;
+}
+
+.legal-explorar-doj {
+  background: #EEF2F8;
+  padding: 40px;
+  text-align: center;
+}
+
+.legal-explorar-doj .titulo-linha {
+  margin: 10px auto 28px;
+}
+
+.legal-explorar-doj-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.legal-explorar-doj-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--texto);
+  font-weight: 600;
+}
+
+.legal-explorar-doj-icone {
+  width: 44px;
+  height: 44px;
+  background: var(--azul-profundo);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 720px) {
+  .legal-carrossel {
+    grid-template-columns: auto 1fr auto;
+  }
+  .legal-carrossel-foto {
+    display: none;
+  }
+  .legal-explorar-grid,
+  .legal-oportunidades-grid,
+  .legal-explorar-doj-grid {
+    grid-template-columns: 1fr;
+  }
+}
