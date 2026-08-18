@@ -2804,3 +2804,14 @@ button:focus-visible {
   margin-bottom: 10px;
   line-height: 1.5;
 }
+
+/* ===== Podcasts: estado sem resultados ===== */
+.news-sem-resultados {
+  color: #4A5568;
+  max-width: 480px;
+  line-height: 1.5;
+}
+
+.news-arquivo-link-topo {
+  margin-top: 0;
+}
