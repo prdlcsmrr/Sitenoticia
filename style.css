@@ -3849,3 +3849,21 @@ button:focus-visible {
   content: "★ ";
   font-size: 0.85em;
 }
+
+/* ===== Links com descrição em estrela (Missing Persons e similares) ===== */
+.link-com-descricao {
+  margin-bottom: 16px;
+}
+
+.link-com-descricao-titulo {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.link-com-descricao-titulo a {
+  color: #1B6EC2;
+}
+
+.link-com-descricao ul.lista-estrela-clara {
+  margin-bottom: 0;
+}
