@@ -3878,3 +3878,16 @@ button:focus-visible {
   margin: 16px 0 20px 32px;
   color: #4A5568;
 }
+
+/* ===== Careers: imagem de destaque (ilustração, sem foto real) ===== */
+.careers-hero-imagem {
+  margin: 24px 0 32px;
+  overflow: hidden;
+  border: 1px solid var(--borda);
+}
+
+.careers-hero-imagem svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
