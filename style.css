@@ -3355,3 +3355,106 @@ button:focus-visible {
     order: 0;
   }
 }
+
+/* ===== Careers: Why Justice (layout com sidebar) ===== */
+.carreira-secao {
+  padding: 40px 0 64px;
+}
+
+.carreira-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.carreira-lateral-titulo {
+  font-size: 1.15rem;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--borda);
+  margin-bottom: 4px;
+}
+
+.carreira-lateral-titulo a {
+  color: var(--azul-profundo);
+}
+
+.carreira-lateral-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.carreira-lateral-nav a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--azul-medio);
+  padding: 16px 0;
+  border-bottom: 1px solid var(--borda);
+  font-size: 0.98rem;
+}
+
+.carreira-lateral-mais {
+  color: var(--azul-profundo);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.carreira-conteudo h1 {
+  font-size: 2.3rem;
+}
+
+.carreira-conteudo .botao-share {
+  margin: 20px 0 28px;
+}
+
+.carreira-conteudo p {
+  color: #2A2F3A;
+  margin-bottom: 18px;
+}
+
+.carreira-conteudo h3 {
+  font-size: 1.25rem;
+  margin: 32px 0 12px;
+}
+
+.carreira-valores {
+  list-style: none;
+  margin: 4px 0 8px;
+}
+
+.carreira-valores li {
+  display: flex;
+  gap: 10px;
+  color: #2A2F3A;
+  margin-bottom: 14px;
+  align-items: baseline;
+}
+
+.carreira-valores-estrela {
+  color: var(--dourado);
+  flex-shrink: 0;
+}
+
+.carreira-divisor {
+  border: none;
+  border-top: 1px solid var(--borda);
+  margin: 28px 0;
+}
+
+.carreira-conteudo .botao {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.carreira-atualizado {
+  color: #6B7280;
+  font-style: italic;
+  margin-top: 28px;
+}
+
+@media (max-width: 780px) {
+  .carreira-layout {
+    grid-template-columns: 1fr;
+  }
+}
