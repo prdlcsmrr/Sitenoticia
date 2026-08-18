@@ -2815,3 +2815,14 @@ button:focus-visible {
 .news-arquivo-link-topo {
   margin-top: 0;
 }
+
+/* ===== Guidance Documents ===== */
+.guidance-meta {
+  color: #4A5568;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.guidance-meta strong {
+  color: var(--texto);
+}
