@@ -3867,3 +3867,14 @@ button:focus-visible {
 .link-com-descricao ul.lista-estrela-clara {
   margin-bottom: 0;
 }
+
+/* ===== Contact the Department ===== */
+.contato-doj-botao-linha {
+  text-align: center;
+  margin: 28px 0;
+}
+
+.contato-doj-endereco {
+  margin: 16px 0 20px 32px;
+  color: #4A5568;
+}
