@@ -3788,3 +3788,33 @@ button:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Report a Crime or Submit a Complaint ===== */
+.crime-secao {
+  padding: 8px 0 64px;
+}
+
+.crime-emergencia {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.crime-secao > .container > p {
+  color: #4A5568;
+  margin-bottom: 14px;
+  max-width: 800px;
+}
+
+.crime-lista-topo {
+  list-style: disc;
+  margin: 18px 0 8px 22px;
+}
+
+.crime-lista-topo li {
+  margin-bottom: 6px;
+}
+
+.crime-secao h2 {
+  font-size: 1.6rem;
+  margin: 28px 0 20px;
+}
