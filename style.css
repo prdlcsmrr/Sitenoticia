@@ -3818,3 +3818,34 @@ button:focus-visible {
   font-size: 1.6rem;
   margin: 28px 0 20px;
 }
+
+/* ===== Listas com estrela em fundo claro (Register/Permits) ===== */
+.lista-estrela-clara {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.lista-estrela-clara li {
+  color: var(--texto);
+  padding: 5px 0;
+}
+
+.lista-estrela-clara li::before {
+  content: "★ ";
+  color: var(--dourado);
+  margin-right: 8px;
+}
+
+.lista-estrela-clara--sub {
+  margin: 2px 0 2px 22px;
+}
+
+.lista-estrela-clara--sub li {
+  padding: 2px 0;
+  font-size: 0.95rem;
+}
+
+.lista-estrela-clara--sub li::before {
+  content: "★ ";
+  font-size: 0.85em;
+}
