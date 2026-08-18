@@ -251,3 +251,10 @@ if (document.getElementById("historia-hero")) {
     });
   }
 }
+
+// ===== Acordeão da página Business and Contracts =====
+document.querySelectorAll(".business-acordeao-item").forEach(function (botao) {
+  botao.addEventListener("click", function () {
+    botao.classList.toggle("business-acordeao-aberto");
+  });
+});
