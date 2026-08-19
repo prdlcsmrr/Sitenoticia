@@ -202,9 +202,9 @@ button:focus-visible {
 .topo-marca-titulo {
   font-family: 'Playfair Display', serif;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.85rem;
   color: var(--texto-claro);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.008em;
   margin: 0;
   line-height: 0.95;
 }
@@ -1178,8 +1178,8 @@ button:focus-visible {
 .rodape-marca-titulo {
   font-family: 'Playfair Display', serif;
   font-weight: 800;
-  font-size: 1.9rem;
-  letter-spacing: 0.04em;
+  font-size: 1.75rem;
+  letter-spacing: 0.006em;
   margin: 0;
   line-height: 0.95;
 }
@@ -1237,17 +1237,6 @@ button:focus-visible {
   border-radius: 50%;
   object-fit: contain;
   flex-shrink: 0;
-}
-
-.rodape-marca-olho {
-  font-size: 0.85rem;
-  color: #C7D2E3;
-}
-
-.rodape-marca-titulo {
-  font-family: 'Fraunces', serif;
-  font-weight: 700;
-  font-size: 1.2rem;
 }
 
 .rodape-contato-coluna,
