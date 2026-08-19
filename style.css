@@ -168,7 +168,7 @@ button:focus-visible {
 .topo-marca {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -1157,7 +1157,7 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
   margin-bottom: 40px;
 }
 
