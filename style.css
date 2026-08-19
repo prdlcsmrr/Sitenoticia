@@ -168,7 +168,7 @@ button:focus-visible {
 .topo-marca {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -191,8 +191,12 @@ button:focus-visible {
 }
 
 .topo-marca-olho {
-  font-size: 0.85rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 0.95rem;
   color: var(--texto-claro);
+  margin: 0;
+  line-height: 1.1;
 }
 
 .topo-marca-titulo {
@@ -201,6 +205,8 @@ button:focus-visible {
   font-size: 1.7rem;
   color: var(--texto-claro);
   letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 0.95;
 }
 
 .topo-direita {
@@ -1151,7 +1157,7 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   margin-bottom: 40px;
 }
 
@@ -1161,9 +1167,12 @@ button:focus-visible {
 }
 
 .rodape-marca-olho {
-  font-size: 0.85rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 0.9rem;
   color: #C7D2E3;
   margin: 0;
+  line-height: 1.1;
 }
 
 .rodape-marca-titulo {
@@ -1171,6 +1180,7 @@ button:focus-visible {
   font-weight: 700;
   font-size: 1.6rem;
   margin: 0;
+  line-height: 0.95;
 }
 
 .rodape-superior-colunas {
