@@ -191,8 +191,8 @@ button:focus-visible {
 }
 
 .topo-marca-olho {
-  font-family: 'Fraunces', serif;
-  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   font-size: 0.95rem;
   color: var(--texto-claro);
   margin: 0;
@@ -200,11 +200,11 @@ button:focus-visible {
 }
 
 .topo-marca-titulo {
-  font-family: 'Fraunces', serif;
-  font-weight: 700;
-  font-size: 1.7rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 1.85rem;
   color: var(--texto-claro);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   margin: 0;
   line-height: 0.95;
 }
@@ -1167,8 +1167,8 @@ button:focus-visible {
 }
 
 .rodape-marca-olho {
-  font-family: 'Fraunces', serif;
-  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   font-size: 0.9rem;
   color: #C7D2E3;
   margin: 0;
@@ -1176,9 +1176,9 @@ button:focus-visible {
 }
 
 .rodape-marca-titulo {
-  font-family: 'Fraunces', serif;
-  font-weight: 700;
-  font-size: 1.6rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 1.75rem;
   margin: 0;
   line-height: 0.95;
 }
