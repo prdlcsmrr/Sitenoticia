@@ -444,7 +444,7 @@ button:focus-visible {
 }
 
 .hero-titulo-placeholder {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--texto-claro);
