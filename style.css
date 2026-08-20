@@ -193,11 +193,10 @@ button:focus-visible {
 .topo-marca-olho {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: 0.7788rem;
+  font-size: 0.8956rem;
   color: var(--texto-claro);
   margin: 0;
   line-height: 1.1;
-  letter-spacing: 0.2353em;
 }
 
 .topo-marca-titulo {
@@ -1170,11 +1169,10 @@ button:focus-visible {
 .rodape-marca-olho {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: 0.7302rem;
+  font-size: 0.8397rem;
   color: #C7D2E3;
   margin: 0;
   line-height: 1.1;
-  letter-spacing: 0.237em;
 }
 
 .rodape-marca-titulo {
