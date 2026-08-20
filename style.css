@@ -193,7 +193,7 @@ button:focus-visible {
 .topo-marca-olho {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: 1.06rem;
+  font-size: 1.18rem;
   color: var(--texto-claro);
   margin: 0;
   line-height: 1.1;
@@ -1169,7 +1169,7 @@ button:focus-visible {
 .rodape-marca-olho {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: 1.0rem;
+  font-size: 1.1062rem;
   color: #C7D2E3;
   margin: 0;
   line-height: 1.1;
