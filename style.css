@@ -197,6 +197,7 @@ button:focus-visible {
   color: var(--texto-claro);
   margin: 0;
   line-height: 1.1;
+  letter-spacing: 0.2353em;
 }
 
 .topo-marca-titulo {
@@ -1173,6 +1174,7 @@ button:focus-visible {
   color: #C7D2E3;
   margin: 0;
   line-height: 1.1;
+  letter-spacing: 0.237em;
 }
 
 .rodape-marca-titulo {
