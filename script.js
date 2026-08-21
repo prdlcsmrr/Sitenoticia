@@ -7,7 +7,7 @@
 
 const slidesDoVideo = [
   { video: "wCCeMfAT8g8", titulo: "Attorney General Todd Blanche's Address to the Workforce", data: "August 13, 2026" },
-  { video: "SEU_ID_DO_VIDEO_2", titulo: "Justice Department Announces Significant Health Care Fraud Takedown, District Anti-Fraud Initiative", data: "August 4, 2026" },
+  { video: "n6hj94Q3uvc", titulo: "11 Defendants Charged in Dismantling of Decade-Long Nationwide Marriage Fraud Scheme", data: "August 12, 2026" },
   { video: "SEU_ID_DO_VIDEO_3", titulo: "Justice Department Announces New State Partnerships and Record Fraud Enforcement Actions Across Southeast", data: "July 30, 2026" },
   { video: "SEU_ID_DO_VIDEO_4", titulo: "Department of Justice Holds Press Conference Announcing Tren de Aragua Developments", data: "July 1, 2026" },
   { video: "SEU_ID_DO_VIDEO_5", titulo: "DOJ Announces Annual Healthcare Fraud Takedown, Historic Fraud Enforcement Results", data: "June 23, 2026" },
