@@ -11,7 +11,7 @@ const slidesDoVideo = [
   { video: "9y2D24zwWsQ", titulo: "DOJ, State Dept. Announce Latest Enforcement Efforts to Eliminate Cartel Jalisco Nueva Generación", data: "August 5, 2026" },
   { video: "mClEqQtJsyc", titulo: "Justice Department Announces Significant Health Care Fraud Takedown, District Anti-Fraud Initiative", data: "August 4, 2026" },
   { video: "Gc94Lq7rY2o", titulo: "Justice Department Announces New State Partnerships and Record Fraud Enforcement Actions Across Southeast", data: "July 30, 2026" },
-  { video: "SEU_ID_DO_VIDEO_6", titulo: "DOJ, DHS, HHS Hold Press Conference on Efforts to Safeguard Unaccompanied Alien Children", data: "June 11, 2026" }
+  { video: "eeP6px4f5o4", titulo: "Department of Justice Holds Press Conference Announcing Tren de Aragua Developments", data: "July 1, 2026" }
 ];
 
 let slideAtual = 0;
