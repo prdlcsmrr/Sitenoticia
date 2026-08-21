@@ -358,7 +358,7 @@ button:focus-visible {
 .hero-cartao {
   background: var(--azul-profundo);
   color: var(--texto-claro);
-  padding: 40px 56px 90px;
+  padding: 40px 56px 109px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 24px 48px rgba(11,37,69,0.25);
