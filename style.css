@@ -579,7 +579,7 @@ button:focus-visible {
 
 /* ===== Título de seção solto (Action Center) ===== */
 .titulo-secao-solto {
-  padding: 56px 0 0;
+  padding: 61.6px 0 0;
 }
 
 /* ===== Sobre / Frentes de atuação ===== */
@@ -593,7 +593,7 @@ button:focus-visible {
 }
 
 .titulo-secao-solto .titulo-secao h2 {
-  margin-bottom: 9px;
+  margin-bottom: 6.5px;
 }
 
 .titulo-secao h2 {
