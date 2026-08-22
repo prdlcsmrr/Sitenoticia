@@ -293,3 +293,26 @@ if (document.getElementById("legal-carrossel")) {
     mostrarSlideLegal((slideLegalAtual + 1) % slidesLegal.length);
   });
 }
+
+// Botão "voltar ao topo": só aparece ao alcançar a seção azul (painel-navy).
+// Em páginas sem essa seção, usa um limite de rolagem como alternativa.
+(function () {
+  var botaoTopo = document.querySelector(".botao-topo");
+  if (!botaoTopo) return;
+
+  var secaoAzul = document.querySelector(".painel-navy");
+  var limiteFallback = 400;
+
+  function atualizarVisibilidade() {
+    var deveMostrar;
+    if (secaoAzul) {
+      deveMostrar = window.scrollY >= secaoAzul.offsetTop;
+    } else {
+      deveMostrar = window.scrollY >= limiteFallback;
+    }
+    botaoTopo.classList.toggle("visivel", deveMostrar);
+  }
+
+  window.addEventListener("scroll", atualizarVisibilidade, { passive: true });
+  atualizarVisibilidade();
+})();
