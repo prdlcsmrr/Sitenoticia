@@ -980,7 +980,8 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: 14px;
-  font-size: 1.012rem;
+  font-size: 1.1132rem;
+  line-height: 1.25;
   color: var(--azul-profundo);
   font-weight: 500;
   text-decoration: none;
