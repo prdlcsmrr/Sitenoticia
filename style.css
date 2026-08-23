@@ -725,7 +725,7 @@ button:focus-visible {
   display: block;
   font-size: 1.122rem;
   color: var(--texto-claro);
-  margin-top: 0;
+  margin-top: -16px;
 }
 
 /* ===== Nosso Trabalho ===== */
