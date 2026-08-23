@@ -1132,7 +1132,7 @@ button:focus-visible {
 
 .painel-numeros h3 {
   color: var(--texto-claro);
-  font-family: 'Playfair Display', serif;
+  font-family: 'Source Sans 3', sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 0;
