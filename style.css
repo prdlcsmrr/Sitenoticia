@@ -1063,7 +1063,7 @@ button:focus-visible {
   grid-template-columns: 190px 1fr;
   gap: 40px;
   align-items: start;
-  margin-bottom: 21px;
+  margin-bottom: 8px;
 }
 
 .painel-navy-selo {
@@ -1119,7 +1119,7 @@ button:focus-visible {
 }
 
 .painel-numeros {
-  padding-top: 17px;
+  padding-top: 6px;
   padding-bottom: 48px;
 }
 
