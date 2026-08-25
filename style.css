@@ -941,7 +941,7 @@ button:focus-visible {
   box-shadow: 0 8px 20px rgba(11,37,69,0.06);
   display: flex;
   flex-direction: column;
-  min-height: 585px;
+  min-height: 468px;
 }
 
 .noticia-corpo {
