@@ -596,6 +596,10 @@ button:focus-visible {
   margin-bottom: 16px;
 }
 
+.noticias .titulo-secao {
+  margin-bottom: 16px;
+}
+
 .titulo-secao-solto .titulo-secao h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 800;
@@ -915,7 +919,7 @@ button:focus-visible {
 
 /* ===== Notícias ===== */
 .noticias {
-  padding: 90px 0;
+  padding: 48px 0 90px;
   text-align: center;
 }
 
