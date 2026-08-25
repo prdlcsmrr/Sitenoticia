@@ -731,7 +731,7 @@ button:focus-visible {
 /* ===== Nosso Trabalho ===== */
 .trabalho {
   background: #EEF2F8;
-  padding: 90px 0;
+  padding: 72px 0 90px;
 }
 
 .trabalho-grid {
