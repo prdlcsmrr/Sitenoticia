@@ -431,11 +431,11 @@ button:focus-visible {
   border: 1.5px solid var(--azul-medio);
   color: var(--azul-profundo);
   font-weight: 600;
-  padding: 12px 26px;
+  padding: 14px 31px;
   text-align: center;
   cursor: pointer;
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.08rem;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
@@ -734,6 +734,10 @@ button:focus-visible {
   font-size: 1.122rem;
   color: var(--texto-claro);
   margin-top: -16px;
+  max-width: 20ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance;
 }
 
 /* ===== Nosso Trabalho ===== */
@@ -824,13 +828,15 @@ button:focus-visible {
 }
 
 .trabalho-cartao-titulo {
-  font-size: 1.05rem;
+  font-family: 'Source Sans 3', sans-serif;
+  color: var(--azul-profundo);
+  font-size: 1.155rem;
   margin-bottom: 8px;
 }
 
 .trabalho-cartao-texto {
   color: #4A5568;
-  font-size: 0.9rem;
+  font-size: 0.99rem;
   margin-bottom: 18px;
   flex-grow: 1;
 }
@@ -882,7 +888,7 @@ button:focus-visible {
 .equipe-cartao {
   background: var(--texto-claro);
   border: 1px solid var(--borda);
-  padding: 24px;
+  padding: 24px 24px 38px;
   box-shadow: 0 10px 24px rgba(11,37,69,0.06);
 }
 
@@ -898,6 +904,7 @@ button:focus-visible {
   display: block;
   color: var(--azul-aco);
   font-weight: 700;
+  font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
@@ -907,7 +914,7 @@ button:focus-visible {
 }
 
 .equipe-detalhe {
-  font-size: 0.88rem;
+  font-size: 0.968rem;
   color: #4A5568;
   margin-bottom: 4px;
 }
@@ -915,7 +922,7 @@ button:focus-visible {
 .link-saiba-mais-pequeno {
   display: inline-block;
   margin-top: 12px;
-  font-size: 0.85rem;
+  font-size: 0.935rem;
   color: var(--azul-aco);
   font-weight: 600;
   text-decoration: underline;
@@ -952,26 +959,26 @@ button:focus-visible {
 .noticia-rotulo {
   color: var(--azul-aco);
   font-weight: 700;
-  font-size: 0.78rem;
+  font-size: 0.858rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 12px;
 }
 
 .noticia-cartao h3 {
-  font-size: 1.05rem;
+  font-size: 1.155rem;
   margin-bottom: 12px;
 }
 
 .noticia-texto {
   color: #4A5568;
-  font-size: 0.9rem;
+  font-size: 0.99rem;
 }
 
 .noticia-data {
   background: #DCE7F5;
   color: var(--azul-profundo);
-  font-size: 0.82rem;
+  font-size: 0.902rem;
   font-weight: 600;
   padding: 10px 22px;
 }
@@ -1212,7 +1219,7 @@ button:focus-visible {
 .rodape-marca-olho {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size: 0.97rem;
+  font-size: 1.164rem;
   color: #C7D2E3;
   margin: 0;
   line-height: 1.1;
@@ -1221,7 +1228,7 @@ button:focus-visible {
 .rodape-marca-titulo {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size: 2.03rem;
+  font-size: 2.436rem;
   letter-spacing: 0.041em;
   margin: 0;
   line-height: 0.95;
@@ -1275,8 +1282,8 @@ button:focus-visible {
 }
 
 .rodape-marca-selo {
-  width: 66px;
-  height: 66px;
+  width: 79px;
+  height: 79px;
   border-radius: 50%;
   object-fit: contain;
   flex-shrink: 0;
@@ -1351,8 +1358,14 @@ button:focus-visible {
 
 .rodape-links-coluna a {
   color: #C7D2E3;
-  font-size: 0.88rem;
+  font-size: 0.968rem;
   text-decoration: underline;
+}
+
+.rodape-links-coluna a.rodape-links-destaque {
+  color: var(--dourado);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .rodape-links-coluna a:hover {
@@ -1398,9 +1411,9 @@ button:focus-visible {
 
 /* ===== Rodapé ===== */
 .rodape {
-  background: var(--azul-profundo);
+  background: #10131A;
   color: #8FA3C4;
-  padding: 24px 0;
+  padding: 24px 0 48px;
   font-size: 0.85rem;
   text-align: center;
 }
