@@ -1199,7 +1199,7 @@ button:focus-visible {
 .rodape-superior {
   background: var(--texto);
   color: var(--texto-claro);
-  padding: 40px 0;
+  padding: 48px 0;
   border-top: 3px solid var(--dourado);
 }
 
