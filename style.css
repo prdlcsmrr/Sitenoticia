@@ -593,7 +593,7 @@ button:focus-visible {
 }
 
 .trabalho .titulo-secao {
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 .titulo-secao-solto .titulo-secao h2 {
@@ -735,7 +735,7 @@ button:focus-visible {
 /* ===== Nosso Trabalho ===== */
 .trabalho {
   background: #EEF2F8;
-  padding: 48px 0 90px;
+  padding: 48px 0 45px;
 }
 
 .trabalho-grid {
