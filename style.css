@@ -864,7 +864,7 @@ button:focus-visible {
 
 /* ===== Equipe ===== */
 .equipe {
-  padding: 20px 0 12px;
+  padding: 8px 0 12px;
   text-align: center;
 }
 
@@ -923,7 +923,7 @@ button:focus-visible {
 
 /* ===== Notícias ===== */
 .noticias {
-  padding: 48px 0 90px;
+  padding: 48px 0 40px;
   text-align: center;
 }
 
