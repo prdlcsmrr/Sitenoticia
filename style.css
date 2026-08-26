@@ -870,7 +870,7 @@ button:focus-visible {
 
 /* ===== Equipe ===== */
 .equipe {
-  padding: 8px 0 12px;
+  padding: 8px 0 14px;
   text-align: center;
 }
 
@@ -1170,7 +1170,7 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: 94px;
+  margin-top: 113px;
 }
 
 .pontos-indicador span {
