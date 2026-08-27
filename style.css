@@ -733,8 +733,8 @@ button:focus-visible {
   display: block;
   font-size: 1.122rem;
   color: var(--texto-claro);
-  margin-top: -16px;
-  max-width: 20ch;
+  margin-top: -22px;
+  max-width: 16ch;
   margin-left: auto;
   margin-right: auto;
   text-wrap: balance;
