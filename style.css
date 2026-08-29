@@ -2056,13 +2056,12 @@ button:focus-visible {
   background: #fff;
   border: 1px solid var(--borda);
   margin-bottom: 28px;
-  overflow-x: auto;
 }
 
 .og-row {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 11px;
 }
 
 .og-row-single {
@@ -2071,44 +2070,37 @@ button:focus-visible {
 
 .og-row-cols5 {
   align-items: flex-start;
-  gap: 18px;
+  gap: 10px;
 }
 
 .og-row-cols8 {
   align-items: flex-start;
-  gap: 8px;
+  gap: 9px;
   flex-wrap: nowrap;
 }
 
 .og-col {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  flex: 1;
-  min-width: 118px;
-}
-
-.og-col-pair, .og-col-double {
-  min-width: 160px;
-}
-
-.og-col-triple, .og-col-quad {
-  min-width: 108px;
+  gap: 7px;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .og-col-spacer {
-  flex: 1;
-  min-width: 20px;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .og-box {
   font-family: 'Source Sans 3', sans-serif;
   font-weight: 700;
-  font-size: 0.64rem;
-  line-height: 1.2;
+  font-size: 0.82rem;
+  line-height: 1.3;
   text-align: center;
-  padding: 7px 6px;
+  padding: 13px 10px;
   border-radius: 2px;
+
   display: block;
   text-decoration: none;
   cursor: pointer;
@@ -2148,30 +2140,68 @@ button:focus-visible {
   margin: 0 auto;
 }
 
-.og-connector-branch-2 {
-  height: 22px;
+/* ===== Branch: barramento horizontal + linhas verticais para cada caixa ===== */
+.og-branch {
+  position: relative;
+  padding-top: 24px;
+}
+
+.og-branch-bus {
+  position: absolute;
+  top: 0;
+  height: 0;
   border-top: 2px solid #B7C2D0;
-  width: 78%;
-  margin: 0 auto;
+}
+
+.og-branch-5 .og-branch-bus {
+  left: 10%;
+  right: 30%;
+}
+
+.og-branch-8 .og-branch-bus {
+  left: 6.3%;
+  right: 6.3%;
+}
+
+/* Tronco descendo do elemento pai ate o centro do barramento */
+.og-branch-5 .og-branch-bus::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  width: 2px;
+  height: 24px;
+  background: #B7C2D0;
+  transform: translateX(-50%);
+}
+
+/* Tronco conectando o barramento de baixo (8 colunas) ao barramento de cima (5 colunas) */
+.og-branch-8 .og-branch-bus::before {
+  content: "";
+  position: absolute;
+  top: -24px;
+  left: 34%;
+  width: 2px;
+  height: 24px;
+  background: #B7C2D0;
+}
+
+/* Linha vertical descendo do barramento ate cada caixa */
+.og-row-cols5 > .og-col:not(.og-col-spacer),
+.og-row-cols8 > .og-col {
   position: relative;
 }
 
-.og-connector-branch-2::before {
+.og-row-cols5 > .og-col:not(.og-col-spacer)::before,
+.og-row-cols8 > .og-col::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -24px;
   left: 50%;
   width: 2px;
-  height: 22px;
+  height: 24px;
   background: #B7C2D0;
-  transform: translateX(-50%) translateY(-22px);
-}
-
-.og-connector-wide {
-  height: 22px;
-  border-top: 2px solid #B7C2D0;
-  width: 92%;
-  margin: 0 auto;
+  transform: translateX(-50%);
 }
 
 .agencies-links-extra {
