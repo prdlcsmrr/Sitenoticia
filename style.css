@@ -2050,11 +2050,128 @@ button:focus-visible {
   padding: 0 0 64px;
 }
 
-.agencies-organograma-imagem {
+.organograma {
   width: 100%;
-  display: block;
+  padding: 24px 8px;
+  background: #fff;
   border: 1px solid var(--borda);
   margin-bottom: 28px;
+  overflow-x: auto;
+}
+
+.og-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.og-row-single {
+  justify-content: center;
+}
+
+.og-row-cols5 {
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.og-row-cols8 {
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.og-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 118px;
+}
+
+.og-col-pair, .og-col-double {
+  min-width: 160px;
+}
+
+.og-col-triple, .og-col-quad {
+  min-width: 108px;
+}
+
+.og-col-spacer {
+  flex: 1;
+  min-width: 20px;
+}
+
+.og-box {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  font-size: 0.64rem;
+  line-height: 1.2;
+  text-align: center;
+  padding: 7px 6px;
+  border-radius: 2px;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  background: #DCE3ED;
+  color: var(--azul-profundo);
+  border-left: 4px solid var(--azul-profundo);
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  user-select: text;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.og-box:hover {
+  background: #C7D2E3;
+}
+
+.og-box:focus,
+.og-box:active,
+.og-box.og-box-selecionado {
+  background: #B9C4D6;
+  border: 1px solid var(--dourado);
+  border-left: 4px solid var(--dourado);
+  box-shadow: 0 0 0 2px rgba(196, 155, 60, 0.35);
+  outline: none;
+}
+
+.og-connector {
+  height: 24px;
+  position: relative;
+}
+
+.og-connector-single {
+  width: 2px;
+  height: 20px;
+  background: #B7C2D0;
+  margin: 0 auto;
+}
+
+.og-connector-branch-2 {
+  height: 22px;
+  border-top: 2px solid #B7C2D0;
+  width: 78%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.og-connector-branch-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #B7C2D0;
+  transform: translateX(-50%) translateY(-22px);
+}
+
+.og-connector-wide {
+  height: 22px;
+  border-top: 2px solid #B7C2D0;
+  width: 92%;
+  margin: 0 auto;
 }
 
 .agencies-links-extra {

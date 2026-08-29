@@ -316,3 +316,19 @@ if (document.getElementById("legal-carrossel")) {
   window.addEventListener("scroll", atualizarVisibilidade, { passive: true });
   atualizarVisibilidade();
 })();
+
+// Organograma: caixas clicaveis/selecionaveis
+(function () {
+  var caixas = document.querySelectorAll(".organograma .og-box");
+  if (!caixas.length) return;
+  caixas.forEach(function (caixa) {
+    caixa.addEventListener("click", function (e) {
+      e.preventDefault();
+      var jaSelecionada = caixa.classList.contains("og-box-selecionado");
+      caixas.forEach(function (c) { c.classList.remove("og-box-selecionado"); });
+      if (!jaSelecionada) {
+        caixa.classList.add("og-box-selecionado");
+      }
+    });
+  });
+})();
