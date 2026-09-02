@@ -476,7 +476,7 @@ button:focus-visible {
 
 .hero-video {
   position: relative;
-  width: 86.4%;
+  width: 103.68%;
   margin-left: auto;
   aspect-ratio: 16 / 9;
   background: #000;
@@ -2048,6 +2048,14 @@ button:focus-visible {
 
 .agencies-organograma {
   padding: 0 0 64px;
+}
+
+.agencies-organograma-imagem {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--borda);
+  margin-bottom: 28px;
 }
 
 .organograma {
